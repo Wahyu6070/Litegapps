@@ -205,6 +205,7 @@ flashable=$base/flashable
 test -d $flashable/magisk/files && del $flashable/magisk/files
 test ! -d $flashable/magisk/files && cdir $flashable/magisk/files
 cp -pf $tmp/* $flashable/magisk/files/
+cp -pf $tmp/* $flashable/all/files/
 
 
 #set module.prop
@@ -248,7 +249,7 @@ printlog
 printlog "- Creating Magisk Module or non magisk module"
 printlog "- ZIP name  : $zipname"
 printlog "- ZIP level : $ziplevel"
-#del $tmp
+del $tmp
 cd $flashable/all
 test -f "$out/$zipname2.zip" && del "$out/$zipname2.zip"
 $bin/zip -r$ziplevel $out/"$zipname2.zip" . >/dev/null
