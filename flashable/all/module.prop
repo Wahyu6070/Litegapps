@@ -1,0 +1,10 @@
+id=litegapps
+name=Litegapps arm65 10.0 unofficial
+version=v0.5
+versionCode=5
+minsdk=off
+date=29-08-2020
+device=All
+author=wahyu6070
+description=Litegapps arm65 10.0 unofficial is a mini version of GAPPS with a small size, this will make your RAM relieved and save your battery with additional tweaks and this great Systemless.
+typeinstall=auto
